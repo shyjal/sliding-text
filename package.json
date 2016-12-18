@@ -1,0 +1,41 @@
+{
+    "author": "Pebble Technology",
+    "dependencies": {},
+    "keywords": [],
+    "name": "sliding-text",
+    "pebble": {
+        "displayName": "Sliding Text",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "dummy": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "fonts/NotoSansMalayalam-Regular.ttf",
+                    "name": "NOTO_LIGHT_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/NotoSansMalayalam-Bold.ttf",
+                    "name": "NOTO_BOLD_24",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "C7A9D535-E9BD-4C36-9C30-B45AD0908634",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}

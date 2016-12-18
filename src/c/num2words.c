@@ -4,55 +4,55 @@
 #include <stdio.h>
 
 static const char* const ONES[] = {
-  "zero",
-  "one",
-  "two",
-  "three",
-  "four",
-  "five",
-  "six",
-  "seven",
-  "eight",
-  "nine"
+  "പൂജ്യം",
+  "ഒന്ന്",
+  "രണ്ട്",
+  "മൂന്ന്",
+  "നാല്",
+  "അഞ്ച്",
+  "ആറ്",
+  "ഏഴ്",
+  "എട്ട്",
+  "ഒൻപത്"
 };
 
 static const char* const TEENS[] ={
   "",
-  "eleven",
-  "twelve",
-  "thirteen",
-  "fourteen",
-  "fifteen",
-  "sixteen",
-  "seventeen",
-  "eighteen",
-  "nineteen"
+  "പതിനൊന്ന്",
+  "പന്ത്രണ്ട്",
+  "പതിമൂന്ന്",
+  "പതിനാല്",
+  "പതിനഞ്ച്",
+  "പതിനാറ്",
+  "പതിനേഴ്",
+  "പതിനെട്ട്",
+  "പത്തൊൻപത്"
 };
 
 static const char* const TEENS_SPLIT[][2] = {
   {"", ""},
-  {"eleven",""},
-  {"twelve",""},
-  {"thirteen",""},
-  {"four","teen"},
-  {"fifteen",""},
-  {"sixteen",""},
-  {"seven","teen"},
-  {"eight","teen"},
-  {"nine","teen"}
+  {"പതിനൊന്ന്",""},
+  {"പന്ത്രണ്ട്",""},
+  {"പതിമൂന്ന്",""},
+  {"പതിനാല്",""},
+  {"പതിനഞ്ച്",""},
+  {"പതിനാറ്",""},
+  {"പതിനേഴ്",""},
+  {"പതിനെട്ട്",""},
+  {"പത്തൊൻപത്",""}
 };
 
 static const char* const TENS[] = {
   "",
-  "ten",
-  "twenty",
-  "thirty",
-  "forty",
-  "fifty",
-  "sixty",
-  "seventy",
-  "eighty",
-  "ninety"
+  "പത്ത്‌",
+  "ഇരുപത്",
+  "മുപ്പത്",
+  "നാല്പത്തി",
+  "അൻപത്",
+  "അറുപത്",
+  "എഴുപത്",
+  "എൺപത്",
+  "തൊണ്ണൂറ്"
 };
 
 static const char* STR_OH_TICK = "o'";

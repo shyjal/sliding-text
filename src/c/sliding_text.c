@@ -223,27 +223,27 @@ static void handle_init() {
 
   window_set_background_color(data->window, GColorBlack);
 
-  data->bitham42_bold = fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD);
-  data->bitham42_light = fonts_get_system_font(FONT_KEY_BITHAM_42_LIGHT);
+
+
+  GFont ml_bold = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_NOTO_BOLD_24));
+  GFont ml_light = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_NOTO_LIGHT_24));
 
   Layer *window_layer = window_get_root_layer(data->window);
   GRect layer_frame = layer_get_frame(window_layer);
   const int16_t width = layer_frame.size.w;
-  init_sliding_row(data, &data->rows[0], GRect(0, 20, width, 60), data->bitham42_bold, 6);
+  init_sliding_row(data, &data->rows[0], GRect(0, 25, width, 70), ml_bold, 6);
   layer_add_child(window_layer, text_layer_get_layer(data->rows[0].label));
 
-  init_sliding_row(data, &data->rows[1], GRect(0, 56, width, 96), data->bitham42_light, 3);
+  init_sliding_row(data, &data->rows[1], GRect(0, 61, width, 106), ml_light, 3);
   layer_add_child(window_layer, text_layer_get_layer(data->rows[1].label));
 
-  init_sliding_row(data, &data->rows[2], GRect(0, 92, width, 132), data->bitham42_light, 0);
+  init_sliding_row(data, &data->rows[2], GRect(0, 97, width, 142), ml_light, 0);
   layer_add_child(window_layer, text_layer_get_layer(data->rows[2].label));
-
-  GFont norm14 = fonts_get_system_font(FONT_KEY_GOTHIC_14);
 
   data->demo_label = text_layer_create(GRect(0, -3, 100, 20));
   text_layer_set_background_color(data->demo_label, GColorClear);
   text_layer_set_text_color(data->demo_label, GColorWhite);
-  text_layer_set_font(data->demo_label, norm14);
+  text_layer_set_font(data->demo_label, ml_light);
   text_layer_set_text(data->demo_label, "demo mode");
   layer_add_child(window_layer, text_layer_get_layer(data->demo_label));
 
@@ -265,4 +265,3 @@ int main(void) {
 
   handle_deinit();
 }
-
